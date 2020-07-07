@@ -42,20 +42,20 @@ class Cows(Horned):
         else:
             print('Уже подоили!')
 
-    def voice(self, song='Мычит как Корова'):
+    def voice(self, song='Муууу'):
         self.voice(song)
 
 
 class Goats(Cows, Horned):
 
-    def voice(self, song='Блеет как Козы'):
+    def voice(self, song='Беее'):
         super(Goats, self).voice(song)
 
 
 class Sheep(Horned):
     haircut = True
 
-    def voice(self, song="Блеет как овцы"):
+    def voice(self, song="Меее"):
         super(Sheep, self).voice(song)
 
     def do_haircut(self):
@@ -88,19 +88,19 @@ class Hens(Birds):
     flying = False
     eggs = True
 
-    def voice(self, song='Кукарекает как курица'):
+    def voice(self, song='Кукареку'):
         super(Hens, self).voice(song)
 
 
 class Ducks(Waterfowls, Birds):
     flying = True
 
-    def voice(self, song='Крякает как утка'):
+    def voice(self, song='Крякря'):
         super(Ducks, self).voice(song)
 
 
 class Geese(Waterfowls, Birds):
-    def voice(self, song='Лает как Гусь'):
+    def voice(self, song='Кре Кре'):
         super(Geese, self).voice(song)
 
 
